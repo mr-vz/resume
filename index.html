@@ -6,61 +6,69 @@
   <title>Vladimir resume</title>
   <meta name="description" content="Vladimir, cv, resume">
   <meta name="keywords" content="Это сайт - резюме Владимира Захарова">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Vladimir</h1>
-  <img src="https://sun9-2.userapi.com/impf/c856032/v856032836/10d547/AfjIaeiLVag.jpg?size=729x1080&quality=96&sign=def9e372b70269106be8617a0544ce1e&type=album" alt="Vladimir" width="150">
-  <p><strong>Frontend</strong> <em>developer</em></p>
-  <hr>
-  <a href="https://vk.com/mr.vzaharov" target="_blank">vk</a>
-  |
-  <a href="https://www.youtube.com/channel/UCNoTvne0t7roBo2CsJxMVSA" target="_blank">youtube</a>
+  <div class="container">
+    <h1>Vladimir</h1>
+    <img src="https://sun9-2.userapi.com/impf/c856032/v856032836/10d547/AfjIaeiLVag.jpg?size=729x1080&quality=96&sign=def9e372b70269106be8617a0544ce1e&type=album" alt="Vladimir" width="150">
+    <p><strong>Frontend</strong> <em>developer</em></p>
+    <hr>
+    <a href="https://vk.com/mr.vzaharov" target="_blank">vk</a>
+    |
+    <a href="https://www.youtube.com/channel/UCNoTvne0t7roBo2CsJxMVSA" target="_blank">youtube</a>
 
-  <h2>Мои хобби</h2>
-  <ol>
-    <li>Театр</li>
-    <li>Путешествия</li>
-    <li>Обучение</li>
-  </ol>
+    <div class="card bg-green">
+    <h2>Мои хобби</h2>
+      <ol>
+        <li>Театр</li>
+        <li>Путешествия</li>
+        <li>Обучение</li>
+      </ol>
+  </div>
 
-  <table border="2">
-    <thead>
-      <tr>
-        <th>Vladimir</th>
-        <th>Job</th>
-        <th>Position</th>
-        <th>Period</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>30</td>
-        <td>Frontend</td>
-        <td>Middle</td>
-        <td>1</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="card bg-red">
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Vladimir</th>
+          <th>Job</th>
+          <th>Position</th>
+          <th>Period</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>30</td>
+          <td>Frontend</td>
+          <td>Middle</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  <form action="/">
-    <h2>Связаться со мной</h2>
-    <div>
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите имя">
-    </div>
-    <div>
-      <label for="email">Ваш email:</label>
-      <input type="email" id="email" placeholder="Введите email">
-    </div>
+  <div class="card bg-yellow">
+    <form action="/">
+      <h2>Связаться со мной</h2>
+      <div>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Введите имя">
+      </div>
+      <div>
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" placeholder="Введите email">
+      </div>
 
-    <div>
-      <label for="message">Ваше сообщение:</label>
-      <br>
-      <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-    </div>    
+      <div>
+        <label for="message">Ваше сообщение:</label>
+        <br>
+        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+      </div>    
 
-    <input type="submit" value="Отправить!">
-  </form>
-
+      <input class="btn" type="submit" value="Отправить!">
+    </form>
+  </div>
+</div>
 </body>
 </html>
